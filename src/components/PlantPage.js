@@ -4,6 +4,11 @@ import PlantList from "./PlantList";
 import Search from "./Search";
 
 function PlantPage() {
+
+  //This is a main component.  It gets plant data from the data store
+  //and calls the PlantList with the data.  It also conditionally renders a 
+  //Plant Search component based on a button click
+  
   const [plants, setPlants] = useState([])
   const [isSearch, setIsSearch] = useState(true)
 
