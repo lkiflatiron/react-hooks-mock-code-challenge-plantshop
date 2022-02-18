@@ -21,7 +21,7 @@ function PlantPage() {
  }
 
   useEffect(()=>{
-    fetch('http://localhost:6001/plants')
+    fetch(`https://plantsytest-app.herokuapp.com/plants`)
     .then(res => res.json())
     .then(plants=> setPlants(plants))
   }, [])

@@ -8,7 +8,7 @@ function NewPlantForm({addNewPlant}) {
   //Post once form data collected in state and submit button clicked on form
   function handleOnSubmit(e) {
     e.preventDefault()
-    fetch('http://localhost:6001/plants', {
+    fetch('https://plantsytest-app.herokuapp.com/plants', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
